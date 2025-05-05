@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewpoint" content="width=device-width" , inital-scale="1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anastasia Findeisen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about"> Über mich </a></li>
+          <li><a href="#experience"> Erfahrung </a></li>
+          <li><a href="#projects"> Projekte </a></li>
+          <li><a href="#contact"> Kontakt </a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anastasia Findeisen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()"> Über mich </a></li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()"> Erfahrung </a>
+          </li>
+          <li><a href="#projects" onclick="toggleMenu()"> Projekte </a></li>
+          <li><a href="#contact" onclick="toggleMenu()"> Kontakt </a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Anastasia Profil Bild"
+          class="rund"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hallo, ich bin</p>
+        <h1 class="titel">Anastasia Findeisen</h1>
+        <p class="section__text__p2">Duale Studentin im vierten Semester.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Lebenslauf
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Konktakt
+          </button>
+        </div>
+        <div id="socials.container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Mein LinkedIn Profil"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Mein Github Profil"
+            class="icon"
+            onclick="location.href='https://github.com/akarina-findi911'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Lernen Sie mehr</p>
+      <h1 class="titel">Über Mich</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Porfil Bild"
+            class="about pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Erfahrung</h3>
+              <p>
+                09/2023 - Heute Duale Studentin <br />
+                Allianz Lebensversicherungs - AG und DHBW Stuttgart
+              </p>
+              <p>
+                11/2022 - 12/2022 Aushilfskraft im Geschenkeinpack-Service
+                <br />
+                Leffers Lohne
+              </p>
+              <p>
+                09/2020 - 10/2021 Aushilfskraft im Hol- und Bringdienst <br />
+                St. Marienhospital Vechta
+              </p>
+              <p>
+                2015-2017 Schulsanitäterin <br />
+                FSG Marbach am Neckar
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Bildung</h3>
+              <p>
+                Wirtschaftsinformatik - Application Management <br />
+                (B. of Science) DHBW Stuttgart <br />
+                seit 2023
+              </p>
+              <p>
+                Abitur
+                <br />
+                Gymnasium Lohne
+                <br />
+                2017 - 2023
+              </p>
+              <p>
+                Schülerin <br />
+                FSG Marbach am Neckar <br />
+                2014-2017
+              </p>
+              <p>
+                2015-2017 Schulsanitäterin <br />
+                FSG Marbach am Neckar
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Detaillierte Informationen zu meinem Studiengang (noch ergänzen)
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Kurze Übersicht über meine</p>
+      <h1 class="titel">Erfahrungen</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Open Office</h3>
+                  <p>erfahren</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sonstiges</h3>
+                  <p>Gut</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>fortgeschritten</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Open Office</h3>
+                  <p>erfahren</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sonstiges</h3>
+                  <p>Gut</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Meine aktuellen</p>
+      <h1 class="titel">Projekte</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project-1.png"
+                alt="Project 1"
+                class="project.img"
+              />
+            </div>
+            <h2 class="experince-sub-title project-title">Erstes Projekt</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project-2.png"
+                alt="Project 2"
+                class="project.img"
+              />
+            </div>
+            <h2 class="experince-sub-title project-title">Zweites Projekt</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project-3.png"
+                alt="Project 3"
+                class="project.img"
+              />
+            </div>
+            <h2 class="experince-sub-title project-title">Drittes Projekt</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Nehmen Sie Kontakt auf.</p>
+      <h1 class="titel">Kontaktieren Sie mich</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="mail icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:anastasia.findeisen@gmx.de">
+              anastasia.findeisen@gmx.de
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon linkedin"
+          />
+          <p>
+            <a href="https://linkedin.com"> LinkedIn </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about"> Über mich </a></li>
+            <li><a href="#experience"> Erfahrung </a></li>
+            <li><a href="#projects"> Projekte </a></li>
+            <li><a href="#contact"> Kontakt </a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Anastasia Findeisen. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
