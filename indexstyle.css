@@ -204,21 +204,21 @@ section {
 #social-container {
   display: flex;
   justify-content: center;
-  margin-top: 1 rem;
-  gap: 1 rem;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 /* ICONS */
 
 .icon {
-  cursor: poiter;
+  cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
 
 .btn-container {
-  display: felx;
+  display: flex;
   justify-content: center;
   gap: 1rem;
 }
@@ -274,6 +274,12 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* Neu hinzugefügt */
+}
 
 .about-details-container {
   justify-content: center;
@@ -283,10 +289,11 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 8px;
 }
 
 .arrow {
@@ -296,7 +303,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5 rem;
+  padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 1rem;
@@ -326,7 +333,7 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
 }
 
@@ -341,7 +348,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5 rem;
+  gap: 2.5rem;
   justify-content: space-around;
 }
 article {
@@ -366,7 +373,7 @@ article.icon {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 8px;
   width: 90%;
   height: 90%;
 }

@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewpoint" content="width=device-width" , inital-scale="1.0" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Portfolio</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="indexstyle.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
@@ -17,7 +16,7 @@
         <ul class="nav-links">
           <li><a href="#about"> Über mich </a></li>
           <li><a href="#experience"> Erfahrung </a></li>
-          <li><a href="#projects"> Projekte </a></li>
+          <li><a href="#blog"> Beiträge </a></li>
           <li><a href="#contact"> Kontakt </a></li>
         </ul>
       </div>
@@ -35,7 +34,7 @@
           <li>
             <a href="#experience" onclick="toggleMenu()"> Erfahrung </a>
           </li>
-          <li><a href="#projects" onclick="toggleMenu()"> Projekte </a></li>
+          <li><a href="#blog" onclick="toggleMenu()"> Beiträge </a></li>
           <li><a href="#contact" onclick="toggleMenu()"> Kontakt </a></li>
         </div>
       </div>
@@ -61,16 +60,10 @@
             Lebenslauf
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Konktakt
+            Kontakt
           </button>
         </div>
         <div id="socials.container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Mein LinkedIn Profil"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com'"
-          />
           <img
             src="./assets/github.png"
             alt="Mein Github Profil"
@@ -90,13 +83,6 @@
       <p class="section__text__p1">Lernen Sie mehr</p>
       <h1 class="titel">Über Mich</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Porfil Bild"
-            class="about pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -157,9 +143,9 @@
             </div>
           </div>
           <div class="text-container">
-            <p>
-              Detaillierte Informationen zu meinem Studiengang (noch ergänzen)
-            </p>
+              <p>
+                Detaillierte Informationen zu meinem Studiengang (noch ergänzen)
+              </p>
           </div>
         </div>
       </div>
@@ -176,7 +162,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Frontend und Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -220,28 +206,6 @@
                 <div>
                   <h3>Java</h3>
                   <p>fortgeschritten</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Open Office</h3>
-                  <p>erfahren</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sonstiges</h3>
-                  <p>Gut</p>
                 </div>
               </article>
             </div>
@@ -301,12 +265,13 @@
         src="./assets/arrow.png"
         alt="arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#blog'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Meine aktuellen</p>
-      <h1 class="titel">Projekte</h1>
+    
+    <section id="blog">
+      <p class="section__text__p1">Hier erfahren Sie mehr über</p>
+      <h1 class="titel">Mich</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -317,19 +282,18 @@
                 class="project.img"
               />
             </div>
-            <h2 class="experince-sub-title project-title">Erstes Projekt</h2>
+            <h2 class="experince-sub-title project-title">Auslandssemester in der Schweizt</h2>
+           <div>
+            <p>
+              Hier einen Text einfügen.
+            </p>
+           </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='blog.html'"
               >
-                Github
-              </button> 
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              >
-                Live Demo
+              Zum Beitrag
               </button>
             </div>
           </div>
@@ -341,46 +305,31 @@
                 class="project.img"
               />
             </div>
-            <h2 class="experince-sub-title project-title">Zweites Projekt</h2>
+            <h2 class="experince-sub-title project-title">Mein Weg zum A2-Schein</h2>
+            <div>
+              <p>
+                Hier einen Text einfügen.
+              </p>
+             </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              ></button>/>
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
+                onclick="location.href='bike.html'"
               >
-                Live Demo
+                Zum Beitrag
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/project-3.png"
-                alt="Project 3"
-                class="project.img"
-              />
-            </div>
-            <h2 class="experince-sub-title project-title">Drittes Projekt</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com'"
-              >
-                Live Demo
-              </button>
-            </div>
           </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
         </div>
       </div>
       <img
@@ -406,17 +355,6 @@
             </a>
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="linkedin icon"
-            class="icon linkedin"
-          />
-          <p>
-            <a href="https://linkedin.com"> LinkedIn </a>
-          </p>
-        </div>
-      </div>
     </section>
     <footer>
       <nav>
@@ -424,7 +362,7 @@
           <ul class="nav-links">
             <li><a href="#about"> Über mich </a></li>
             <li><a href="#experience"> Erfahrung </a></li>
-            <li><a href="#projects"> Projekte </a></li>
+            <li><a href="#blog"> Beiträge </a></li>
             <li><a href="#contact"> Kontakt </a></li>
           </ul>
         </div>
