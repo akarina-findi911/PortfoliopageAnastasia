@@ -118,3 +118,14 @@
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .places-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-container {
+    max-width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  }
+}

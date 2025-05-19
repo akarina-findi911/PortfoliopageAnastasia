@@ -434,3 +434,7 @@ footer {
 footer p {
   text-align: center;
 }
+
+.copyright-information {
+  margin: 1rem;
+}
