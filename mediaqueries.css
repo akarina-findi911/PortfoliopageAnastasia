@@ -119,13 +119,27 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .places-container {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 768px) {
+  .timeline-split .timeline {
+    display: table;
   }
-
-  .blog-container {
-    max-width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  .timeline-split .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-datum,
+  .timeline-split .timeline-marker,
+  .timeline-split .timeline-content {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .timeline-split .timeline-marker {
+    position: relative;
+  }
+  .timeline-split .timeline-content {
+    padding-left: 30px;
+  }
+  .timeline-split .timeline-datum {
+    padding-right: 30px;
   }
 }
