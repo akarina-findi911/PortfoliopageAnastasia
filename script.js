@@ -5,15 +5,37 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-let map;
+const texts = [
+  "Duale Studentin an der DHBW",
+  "Freemoverin an der BFH",
+  "Content Creatorin",
+  "Business Analysitin",
+];
 
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
+const textElement = document.getElementById("typing-text");
+let index = 0;
+let charIndex = 0;
+let deleting = false;
 
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
+function type() {
+  const currentText = texts[index];
+
+  if (!deleting) {
+    textElement.textContent = currentText.substring(0, charIndex++);
+    if (charIndex > currentText.length) {
+      deleting = true;
+      setTimeout(type, 2000);
+      return;
+    }
+  } else {
+    textElement.textContent = currentText.substring(0, charIndex--);
+    if (charIndex < 0) {
+      deleting = false;
+      index = (index + 1) % texts.length;
+    }
+  }
+
+  setTimeout(type, deleting ? 50 : 100);
 }
 
-initMap();
+type();

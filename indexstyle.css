@@ -200,6 +200,21 @@ section {
   margin-bottom: 1rem;
 }
 
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.75rem;
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .titel {
   font-size: 3rem;
   text-align: center;
@@ -216,7 +231,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 3rem;
 }
 
 /* BUTTONS */
@@ -269,14 +284,16 @@ section {
 
 /* ABOUT SECTION */
 
-#about {
+#about-bildung,
+#about-erfahrung {
   position: relative;
+  height: 100vh;
 }
 
 .about-containers {
   gap: 2 rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .about-details-container {
@@ -298,6 +315,8 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  width: 50px;
+  height: 50px;
 }
 
 .details-container {
@@ -313,6 +332,10 @@ section {
   max-width: 1100px;
 }
 
+.details-container.image-container {
+  border: none;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -322,6 +345,13 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.image-container img {
+  margin-top: 8px;
+  max-width: 565px;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 /* EXPERIENCE SECTION */
@@ -364,7 +394,7 @@ article.icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+#blog {
   position: relative;
 }
 
@@ -392,6 +422,7 @@ article.icon {
 /* KONTAKT */
 
 #contact {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
