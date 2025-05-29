@@ -39,3 +39,43 @@ function type() {
 }
 
 type();
+
+// bobo.html
+function initMap() {
+  var options = {
+    zoom: 12,
+    center: { lat: 46.948998594, lng: 7.437170775 },
+  };
+
+  var map = new google.maps.Map(document.getElementById("map"), options);
+
+  // Markierungen setzten mit Array und Loop
+  var marker = [
+    {
+      coords: { lat: 46.941957, lng: 7.403097 },
+      content: "<h1> BOBO </h1>",
+    },
+  ];
+
+  for (var i = 0; i < marker.length; i++) {
+    addMarker(marker[i]);
+  }
+
+  // Markierungen hinzufügen - Funktion
+  function addMarker(props) {
+    var marker = new google.maps.Marker({
+      position: props.coords,
+      map: map,
+    });
+
+    if (props.content) {
+      var infoWindow = new google.maps.InfoWindow({
+        content: props.content,
+      });
+
+      marker.addListener("click", function () {
+        infoWindow.open(map, marker);
+      });
+    }
+  }
+}

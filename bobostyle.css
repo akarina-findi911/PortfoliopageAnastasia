@@ -1,0 +1,36 @@
+/* Formatierung Bildergalerie */
+
+.galerie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.galerie img {
+  width: 25rem;
+  height: 25rem;
+  vertical-align: bottom;
+  border-radius: 2rem;
+}
+
+.galerie-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+/* Formatierung Karte für bobo.html */
+#map {
+  height: 400px;
+  justify-content: center;
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
