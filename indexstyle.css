@@ -17,6 +17,15 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+.text-link {
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-underline-offset: 2px;
+}
 
 /* TRANSITION */
 
@@ -89,14 +98,23 @@ a:hover {
 }
 
 .menu-links {
+  display: none;
+  flex-direction: column;
+  background-color: white;
   position: absolute;
   top: 100%;
-  right: 0%;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  z-index: 1000;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
   background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -115,6 +133,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  display: flex;
 }
 
 .hamburger-icon.open span:first-child {
@@ -288,6 +307,7 @@ section {
 #about-erfahrung {
   position: relative;
   height: 100vh;
+  align-content: center;
 }
 
 .about-containers {
@@ -355,6 +375,7 @@ section {
 
 #experience {
   position: relative;
+  align-content: center;
 }
 
 .experience-sub-title {
@@ -362,6 +383,7 @@ section {
   font-weight: 600;
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .experience-details-container {
@@ -394,6 +416,7 @@ article.icon {
 
 #blog {
   position: relative;
+  align-content: center;
 }
 
 .color-container {
@@ -502,12 +525,12 @@ footer p {
 }
 
 .timeline-marker:before {
-  background: #ccd5db; /* Gleiche Farbe wie Linie */
+  background: #ccd5db;
   border: none;
   border-radius: 50%;
   content: "";
   display: block;
-  height: 10px; /* Kleiner */
+  height: 10px;
   width: 10px;
   position: absolute;
   left: 0;
@@ -518,12 +541,12 @@ footer p {
 .timeline-marker:after {
   content: "";
   width: 2px;
-  background: #ccd5db; /* Linie */
+  background: #ccd5db;
   display: block;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 4px; /* 10px Punkt / 2 = 5, leicht zentriert */
+  left: 4px;
   z-index: 0;
 }
 
@@ -547,4 +570,35 @@ footer p {
 .timeline-content ul li {
   list-style-type: disc;
   color: #3d4351;
+}
+
+/* Diagramm */
+
+.chart {
+  width: 500px;
+  max-width: 100%;
+}
+
+.bar {
+  align-items: left;
+  margin: 0.5rem 0;
+}
+
+.label {
+  width: 100px;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.value {
+  height: 21px;
+  background-color: #3d4351;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-align: right;
+  color: white;
+  padding-right: 10px;
+  line-height: 24px;
+  transition: width 0.3s ease-in-out;
 }

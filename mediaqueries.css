@@ -9,12 +9,28 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  #profile,
+  #about-bildung,
+  #about-erfahrung,
+  #blog {
+    position: relative;
+    height: auto;
+    align-content: center;
+  }
+  #contact {
+    position: relative;
+    height: 40vh;
+    align-content: center;
+  }
   #desktop-nav {
     display: none;
   }
 
   #hamburger-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
 
   #experience,
@@ -41,8 +57,8 @@
   }
 
   .section__pic-container {
-    width: 2.75px;
-    height: 2.75px;
+    width: 275px;
+    height: 275px;
     margin: 0 auto 2rem;
   }
 
@@ -116,6 +132,18 @@
 
   .text-container {
     text-align: justify;
+  }
+
+  .details-container {
+    width: 315px;
+  }
+
+  #map {
+    height: 400px;
+    width: 400px;
+    transform: scale(0.6);
+    transform-origin: center;
+    margin: 0 auto;
   }
 }
 

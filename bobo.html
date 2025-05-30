@@ -24,10 +24,11 @@
       <div class="logo">Anastasia Findeisen</div>
       <div>
         <ul class="nav-links">
-          <li><a href="index.html#about"> Über mich </a></li>
-          <li><a href="index.html#experience"> Erfahrung </a></li>
-          <li><a href="index.html#blog"> Beiträge </a></li>
-          <li><a href="index.html#contact"> Kontakt </a></li>
+          <li><a href="#profile"> Über mich </a></li>
+          <li><a href="#about-bildung"> Bildung </a></li>
+          <li><a href="#experience"> Skills </a></li>
+          <li><a href="#blog"> Beiträge </a></li>
+          <li><a href="#contact"> Kontakt </a></li>
         </ul>
       </div>
     </nav>
@@ -40,122 +41,103 @@
           <span> </span>
         </div>
         <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()"> Über mich </a></li>
           <li>
-            <a href="index.html#about" onclick="toggleMenu()"> Über mich </a>
+            <a href="#about-bildung" onclick="toggleMenu()"> Bildung</a>
           </li>
           <li>
-            <a href="index.html#experience" onclick="toggleMenu()">
-              Erfahrung
-            </a>
+            <a href="#experience" onclick="toggleMenu()"> Skills </a>
           </li>
-          <li>
-            <a href="index.html#blog" onclick="toggleMenu()"> Beiträge </a>
-          </li>
-          <li>
-            <a href="index.html#contact" onclick="toggleMenu()"> Kontakt </a>
-          </li>
+          <li><a href="#blog" onclick="toggleMenu()"> Beiträge </a></li>
+          <li><a href="#contact" onclick="toggleMenu()"> Kontakt </a></li>
         </div>
       </div>
     </nav>
 
+    <!-- Bobo Bümpliz Nord-->
     <div class="section__text">
       <h1 class="title">BOBO</h1>
     </div>
 
-    <!-- Werke Umkreis Bümpliz Nord / Stöckacker -->
+    <div class="bobo-gallery">
+      <p class="bobo-text">Diese Werke finden Sie in Bümpliz Nord:</p>
 
-    <div class="galerie">
-      <div class="galerie-text">
-        Bobo ist ein Anti-Stylist. Eine Anti-Bewegung gegen eine Anti-Bewegung.
-        <br />
-        Aber wieso ist Bobo traurig?
-      </div>
-      <figure>
+      <div class="bobo-gallery-row">
+        <div class="bobo-container">
+          <img
+            class="bobo-gallery-item"
+            src="./assets/BoboBuemplizNordEMCH.png"
+          />
+          <p>Bobo</p>
+        </div>
+
         <img
+          class="bobo-gallery-item"
           src="./assets/BoboUnterfuehrungBuemplizNord.png"
-          alt="Graffiti von Bobo an der Unterführung Buempliz Nord"
         />
-        <figcaption>Bobo Unterführung Bümpliz Nord</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="./assets/BoboH12.png"
-          alt="Graffiti von Bobo an der Hauptstrasse 12"
-        />
-        <figcaption>Bobo H12</figcaption>
-      </figure>
+        <img class="bobo-gallery-item" src="./assets/BoboPuras.png" />
+        <img class="bobo-gallery-item" src="./assets/BoboPurasTag.png" />
+      </div>
     </div>
 
-    <div class="galerie">
-      <figure>
-        <img
-          src="./assets/BoboPuras.png"
-          alt="Graffiti von Bobo am Gebäude von Puras AG"
-        />
-        <figcaption>An dem Gebäude von Puras AG</figcaption>
-      </figure>
+    <!-- Bobo Europaplatz-->
+    <div class="bobo-gallery">
+      <p class="bobo-text">
+        Diese Werke finden Sie in der Nähe der Haltstelle Europaplatz / Bümpliz:
+      </p>
 
-      <figure>
-        <img
-          src="./assets/BoboBethlehemstr.png"
-          alt="Graffiti von Bobo in der Bethlehemstraße in Bümpliz Nord"
-        />
-        <figcaption>Bethlehemstraße</figcaption>
-      </figure>
+      <div class="bobo-gallery-row">
+        <div class="bobo-container">
+          <img class="bobo-gallery-item" src="./assets/BoboH12.png" />
+          <p>Bobo</p>
+        </div>
+
+        <img class="bobo-gallery-item" src="./assets/BoboBethlehemstr.png" />
+      </div>
     </div>
 
-    <!-- Werke Umkreis Bern Bahnhof -->
-    <h3>Werke Umkreis Bern Bahnhof</h3>
+    <!-- Bobo Strecke nach Bern-->
+    <div class="bobo-gallery">
+      <p class="bobo-text">
+        Diese Werke finden Sie auf der Strecke von Bümpliz Nord nach Bern:
+      </p>
 
-    <div class="galerie">
-      <figure>
-        <img
-          src="./assets/BoboStreckeBern(1).png"
-          alt="Graffiti von Bobo entlang der Strecke Bümpliz Nord - Bern (1)"
-        />
-      </figure>
-      <figure>
-        <img
-          src="./assets/BoboStreckeBern(2).png"
-          alt="Graffiti von Bobo entlang der Strecke Bümpliz Nord - Bern (2)"
-        />
-      </figure>
-      <figure>
-        <img
-          src="./assets/BoboStreckeBern(3).png"
-          alt="Graffiti von Bobo entlang der Strecke Bümpliz Nord - Bern (3)"
-        />
-      </figure>
+      <div class="bobo-gallery-row">
+        <div class="bobo-container">
+          <img
+            class="bobo-gallery-item"
+            src="./assets/BoboStreckeBern(1).png"
+          />
+          <p>Bobo</p>
+        </div>
+
+        <img class="bobo-gallery-item" src="./assets/BoboStreckeBern(2).png" />
+        <img class="bobo-gallery-item" src="./assets/BoboStreckeBern(3).png" />
+      </div>
     </div>
 
-    <div class="galerie">
-      <figure>
-        <img
-          src="./assets/BoboViktorianstr(1.1).png"
-          alt="Graffiti von Bobo in der Viktorianstrasse (1.1)"
-        />
-        <figcaption>Bobo Unterführung Bümpliz Nord</figcaption>
-      </figure>
+    <!-- Bobo innerhalb von Bern-->
+    <div class="bobo-gallery">
+      <p class="bobo-text">Diese Werke finden Sie in Bern:</p>
 
-      <figure>
+      <div class="bobo-gallery-row">
+        <div class="bobo-container">
+          <img
+            class="bobo-gallery-item"
+            src="./assets/BoboViktorianstr(1.1).png"
+          />
+          <p>Bobo</p>
+        </div>
+
         <img
+          class="bobo-gallery-item"
           src="./assets/BoboViktorianstr(1.2).png"
-          alt="Graffiti von Bobo in der Viktorianstrasse (1.2)"
         />
-        <figcaption>Bobo Unterführung Bümpliz Nord</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="./assets/BoboViktorianstr(2).png"
-          alt="Graffiti von Bobo in der Viktorianstrasse (2)"
-        />
-        <figcaption>Bobo Unterführung Bümpliz Nord</figcaption>
-      </figure>
+        <img class="bobo-gallery-item" src="./assets/BoboViktorianstr(2).png" />
+      </div>
     </div>
 
-    <div id="map"></div>
+    <div id="map" style="margin-top: 10rem"></div>
 
     <footer>
       <nav>

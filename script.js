@@ -9,7 +9,7 @@ const texts = [
   "Duale Studentin an der DHBW",
   "Freemoverin an der BFH",
   "Content Creatorin",
-  "Business Analysitin",
+  "Business Analystin",
 ];
 
 const textElement = document.getElementById("typing-text");
@@ -53,7 +53,27 @@ function initMap() {
   var marker = [
     {
       coords: { lat: 46.941957, lng: 7.403097 },
-      content: "<h1> BOBO </h1>",
+      content: "<h3> Unterführung Europaplatz </h3>",
+    },
+    {
+      coords: { lat: 46.95407699814242, lng: 7.4539471577548495 },
+      content: "<h3> Viktorianstrasse, Bern </h3>",
+    },
+    {
+      coords: { lat: 46.95407699814242, lng: 7.4539471577548495 },
+      content: "<h3> Unterführung Bümpliz Nord, Bern </h3>",
+    },
+    {
+      coords: { lat: 46.946672, lng: 7.396085 },
+      content: "<h3> Bethlehemstrasse, Bern Bümpliz </h3>",
+    },
+    {
+      coords: { lat: 46.946317224096944, lng: 7.3955875746495705 },
+      content: "<h3> Gebäude Puras, Bern Bümpliz </h3>",
+    },
+    {
+      coords: { lat: 46.946146957911225, lng: 7.38644661475621 },
+      content: "<h3> Bern Bümpliz </h3>",
     },
   ];
 
