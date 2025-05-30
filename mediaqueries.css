@@ -139,14 +139,19 @@
   }
 
   .copyright-information {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   #map {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     width: 75vw;
     height: 250px;
+  }
+
+  .nav-footer {
+    margin-top: 3rem;
   }
 }
 
