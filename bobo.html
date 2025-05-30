@@ -13,10 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
   </head>
 
   <body>
@@ -24,11 +21,11 @@
       <div class="logo">Anastasia Findeisen</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#profile"> Über mich </a></li>
-          <li><a href="#about-bildung"> Bildung </a></li>
-          <li><a href="#experience"> Skills </a></li>
-          <li><a href="#blog"> Beiträge </a></li>
-          <li><a href="#contact"> Kontakt </a></li>
+          <li><a href="index.html#profile"> Über mich </a></li>
+          <li><a href="index.html#about-bildung"> Bildung </a></li>
+          <li><a href="index.html#experience"> Skills </a></li>
+          <li><a href="index.html#blog"> Beiträge </a></li>
+          <li><a href="index.html#contact"> Kontakt </a></li>
         </ul>
       </div>
     </nav>
@@ -41,26 +38,46 @@
           <span> </span>
         </div>
         <div class="menu-links">
-          <li><a href="#profile" onclick="toggleMenu()"> Über mich </a></li>
           <li>
-            <a href="#about-bildung" onclick="toggleMenu()"> Bildung</a>
+            <a href="index.html#profile" onclick="toggleMenu()"> Über mich </a>
           </li>
           <li>
-            <a href="#experience" onclick="toggleMenu()"> Skills </a>
+            <a href="index.html#about-bildung" onclick="toggleMenu()">
+              Bildung</a
+            >
           </li>
-          <li><a href="#blog" onclick="toggleMenu()"> Beiträge </a></li>
-          <li><a href="#contact" onclick="toggleMenu()"> Kontakt </a></li>
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"> Skills </a>
+          </li>
+          <li>
+            <a href="index.html#blog" onclick="toggleMenu()"> Beiträge </a>
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()"> Kontakt </a>
+          </li>
         </div>
       </div>
     </nav>
 
-    <!-- Bobo Bümpliz Nord-->
-    <div class="section__text">
-      <h1 class="title">BOBO</h1>
-    </div>
+    <h3 style="text-align: center; padding: 2rem">
+      Hinweis: Aufgrund eines Krankheitsfalls in der Abteilung Webentwicklung
+      befindet sich diese Seite derzeit noch im Aufbau. Vielen Dank für Ihr
+      Verständnis.
+    </h3>
 
+    <h1 class="bobo-text"> BOBO </h1>
+    <p class="bobo-text"> 
+      <br> Bobo ist ein bekannter <b> Anti-Style-Writer</b> in Bern. Wahrscheinlich handelt es sich um eine Gruppe von Writern statt um eine einzelne Person.
+      <br> Anti-Style ist eine Gegenbewegung zur Graffiti-Kultur.
+      Während Graffiti oft als rebellische Anti-Bewegung verstanden wird, sind Anhänger des Anti-Style der Meinung, dass Graffiti seine eigenen Regeln verletzt. <br> So entstand die Anti-Style-Bewegung.
+      Viele Kritiker behaupten zudem, dass die Bilder so aussehen, als könnten sie auch von Kindern gemalt worden sein.
+    </p>
+
+    <!-- Bobo Bümpliz Nord-->
     <div class="bobo-gallery">
-      <p class="bobo-text">Diese Werke finden Sie in Bümpliz Nord:</p>
+      <div class="bobo-text">
+        <h3>Diese Werke finden Sie in Bümpliz Nord:</h3>
+      </div>
 
       <div class="bobo-gallery-row">
         <div class="bobo-container">
@@ -75,32 +92,36 @@
           class="bobo-gallery-item"
           src="./assets/BoboUnterfuehrungBuemplizNord.png"
         />
-        <img class="bobo-gallery-item" src="./assets/BoboPuras.png" />
-        <img class="bobo-gallery-item" src="./assets/BoboPurasTag.png" />
+
       </div>
     </div>
 
     <!-- Bobo Europaplatz-->
     <div class="bobo-gallery">
-      <p class="bobo-text">
-        Diese Werke finden Sie in der Nähe der Haltstelle Europaplatz / Bümpliz:
-      </p>
+      <div class="bobo-text">
+        <h3>
+          Diese Werke finden Sie in der Nähe der Haltstelle Europaplatz /
+          Bümpliz:
+        </h3>
+      </div>
 
       <div class="bobo-gallery-row">
         <div class="bobo-container">
           <img class="bobo-gallery-item" src="./assets/BoboH12.png" />
-          <p>Bobo</p>
+          <p class="bobo-text">Bobo malt gerne <b>Anti-Style</b>. <br>
+          Dieses Werk ist ein gutes Beispiel für die Anti-Style-Bewegung.</p>
         </div>
 
-        <img class="bobo-gallery-item" src="./assets/BoboBethlehemstr.png" />
+        <img class="bobo-gallery-item" src="./assets/BoboBethlehemstr.png" />     <img class="bobo-gallery-item" src="./assets/BoboPuras.png" />
+        <img class="bobo-gallery-item" src="./assets/BoboPurasTag.png" />
       </div>
     </div>
 
     <!-- Bobo Strecke nach Bern-->
     <div class="bobo-gallery">
-      <p class="bobo-text">
+      <h3 class="bobo-text">
         Diese Werke finden Sie auf der Strecke von Bümpliz Nord nach Bern:
-      </p>
+      </h3>
 
       <div class="bobo-gallery-row">
         <div class="bobo-container">
@@ -118,7 +139,7 @@
 
     <!-- Bobo innerhalb von Bern-->
     <div class="bobo-gallery">
-      <p class="bobo-text">Diese Werke finden Sie in Bern:</p>
+      <h3 class="bobo-text">Diese Werke finden Sie in Bern:</h3>
 
       <div class="bobo-gallery-row">
         <div class="bobo-container">
@@ -126,18 +147,33 @@
             class="bobo-gallery-item"
             src="./assets/BoboViktorianstr(1.1).png"
           />
-          <p>Bobo</p>
+          <p class="bobo-text">
+            Bobo und ASTR <br />
+            ASTR ist ebenfalls eine berühmte Writer-Gruppe in Bern
+          </p>
         </div>
 
-        <img
-          class="bobo-gallery-item"
-          src="./assets/BoboViktorianstr(1.2).png"
-        />
-        <img class="bobo-gallery-item" src="./assets/BoboViktorianstr(2).png" />
-      </div>
+        <div class="bobo-container">
+          <img
+            class="bobo-gallery-item"
+            src="./assets/BoboViktorianstr(1.2).png"
+          />
+          <p>Nahaufnahme</p>
+        </div>
+
+        <div class="bobo-container">
+          <img
+            class="bobo-gallery-item"
+            src="./assets/BoboViktorianstr(2).png"
+          />
+          <p>Bobos signature "B" ist das B mit zackigen Zähnen</p>
+        </div>
+
+
     </div>
 
-    <div id="map" style="margin-top: 10rem"></div>
+    <p class="bobo-text">Standorte von Bobos Werken in Bern:</p>
+    <div id="map"></div>
 
     <footer>
       <nav>

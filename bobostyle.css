@@ -4,12 +4,17 @@
   justify-content: center;
   margin-right: 8rem;
   margin-left: 8rem;
+  margin-top: 1rem;
 }
 
 .bobo-text {
   text-align: center;
+  padding: 0.5rem;
 }
 
+.bobo-gallery {
+  padding: 2rem;
+}
 .bobo-gallery-row {
   display: flex;
   gap: 1rem;
